@@ -170,7 +170,7 @@ object Chapter3Practice {
         array.filter(_.startsWith("America/")).map(_.substring(8)).sorted.foreach(println(_))
     }
 
-    def number10() {
+    def number10(){
         val flavors = SystemFlavorMap.getDefaultFlavorMap().asInstanceOf[SystemFlavorMap]
         // 如果List要转换ArrayBuffer，需要导入import scala.collection.JavaConversions.asScalaBuffer
         val arrayBuffer = flavors.getNativesForFlavor(DataFlavor.imageFlavor)
